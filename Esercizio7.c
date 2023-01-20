@@ -59,7 +59,7 @@ void inizializzaArray(e*array,int k){
 
 void aggiornaArray(e*a, int n, int k1, int k2){
     for(int i=0; i<n; i++){
-        int temp=((rand()%k2)+k1);
+        int temp=((rand()+k1)%k2);
         for (int x=0; x<k2; x++){
             if(a[x].v==temp){
                 a[x].c++;
