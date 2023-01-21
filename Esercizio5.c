@@ -19,7 +19,7 @@ long isNumber(const char* s);
 
 int main (int argc, char* argv[]){
     if(argc==1){
-        puts("Not enought arguments");
+        puts("Not enough arguments");
         return error;
     }
     //controllo se c'è -h
