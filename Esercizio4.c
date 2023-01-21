@@ -5,7 +5,7 @@
 #include <string.h>
 
 long isNumber(const char* s);
-char* evalue (int c, char*v[]);
+char* evalue (int cIndex, char*v[]);
 
 int main(int argc,  char*argv[]){
     
