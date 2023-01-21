@@ -54,7 +54,7 @@ void evalueOption(int cIndex, char* v[]){
                 oPrint(optarg);
                 break;
             case '?':
-                errPrint((char)opt);
+                errPrint((char)optopt);
                 break;
             default:
                 abort();
@@ -66,6 +66,10 @@ void evalueOption(int cIndex, char* v[]){
 }
 
 void errPrint (char c){
+    if(c=='o' || c=='n' || c=='m'){
+        printf(" -%c: missing arguments ", (char)c);
+        return ;
+    }
     printf(" -%c: Not an option ", (char)c);
 }
 
