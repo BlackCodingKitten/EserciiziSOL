@@ -1,0 +1,1 @@
+int sum_r (int x,int**ptr);
