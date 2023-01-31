@@ -53,8 +53,8 @@ int main (void){
                                 fflush(stdout);
                             }
                         }
-                        freeMem(argv);
                 }
+                freeMem(argv);
                 break;
             case -1:
                 exit(EXIT_FAILURE);
