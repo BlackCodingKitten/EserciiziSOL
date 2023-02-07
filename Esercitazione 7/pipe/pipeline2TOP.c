@@ -19,7 +19,6 @@ struct node{
 };
 
 struct queue{
-    size_t data_size;
     struct node* first;
     struct node* last;
 };
